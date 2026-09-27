@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhigna Margam — Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0F1115; --panel:#171A21; --line:#262B35; --text:#E7E9EE; --muted:#9AA1AF;
+  --accent:#7DD3B0; --accent2:#F2C879;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.6}
+.wrap{max-width:980px;margin:0 auto;padding:0 28px}
+header{padding:90px 0 50px}
+.tag{font-family:'JetBrains Mono',monospace;color:var(--accent);font-size:13px}
+h1{font-family:'Sora',sans-serif;font-size:clamp(34px,5.5vw,56px);font-weight:700;margin-top:16px;max-width:16ch}
+.sub{color:var(--muted);margin-top:18px;max-width:56ch;font-size:17px}
+.contacts{margin-top:26px;display:flex;gap:20px;font-size:14px}
+.contacts a{color:var(--accent2);text-decoration:none;border-bottom:1px solid transparent}
+.contacts a:hover{border-color:var(--accent2)}
+.specimen{display:flex;gap:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-top:44px}
+.spec-block{flex:1;padding:22px 18px;border-right:1px solid var(--line)}
+.spec-block:last-child{border-right:none}
+.spec-block .label{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);margin-bottom:8px}
+.spec-block .swatch{width:100%;height:34px;border-radius:6px}
+.spec-block .big{font-family:'Sora',sans-serif;font-size:26px;font-weight:700}
+.spec-block .code{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--accent)}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-family:'Sora',sans-serif;font-size:22px;margin-bottom:26px}
+.skills{display:flex;flex-wrap:wrap;gap:9px}
+.skill{font-family:'JetBrains Mono',monospace;font-size:13px;padding:7px 13px;background:var(--panel);border:1px solid var(--line);border-radius:20px;color:var(--accent)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs input{display:none}
+.tabs label{font-family:'JetBrains Mono',monospace;font-size:13px;padding:10px 16px;background:var(--panel);border:1px solid var(--line);border-bottom:none;border-radius:8px 8px 0 0;color:var(--muted);cursor:pointer}
+.tab-panels{border:1px solid var(--line);border-radius:0 8px 8px 8px;background:var(--panel);padding:28px;min-height:150px}
+.panel{display:none}
+.panel h3{font-family:'Sora',sans-serif;font-size:19px;margin-bottom:6px}
+.panel .stack{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent);margin-bottom:10px}
+.panel p{color:var(--muted);font-size:15px;max-width:60ch}
+.panel a{display:inline-block;margin-top:12px;font-size:13px;color:var(--accent2);text-decoration:none;border-bottom:1px solid var(--accent2)}
+#t1:checked ~ .tabs label[for="t1"],
+#t2:checked ~ .tabs label[for="t2"],
+#t3:checked ~ .tabs label[for="t3"],
+#t4:checked ~ .tabs label[for="t4"]{color:var(--text);border-color:var(--accent)}
+#t1:checked ~ .tab-panels #p1,
+#t2:checked ~ .tab-panels #p2,
+#t3:checked ~ .tab-panels #p3,
+#t4:checked ~ .tab-panels #p4{display:block}
+.job{margin-bottom:26px;padding-bottom:26px;border-bottom:1px solid var(--line)}
+.job:last-child{border:none;margin:0;padding:0}
+.job .meta{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent);display:flex;justify-content:space-between}
+.job h3{font-family:'Sora',sans-serif;font-size:18px;margin:6px 0 10px}
+.job ul{padding-left:18px;color:var(--muted);font-size:14.5px}
+.job li{margin-bottom:6px}
+.note{font-size:12.5px;color:var(--muted);opacity:.7;margin-top:14px}
+footer{padding:40px 0 70px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="tag">// portfolio</div>
+  <h1>I build interfaces that feel fast and finished.</h1>
+  <p class="sub">Frontend developer working in React, JavaScript, HTML and CSS — focused on components that are clean to use and clean to read.</p>
+  <div class="contacts">
+    <a href="mailto:abhignamargam12@gmail.com">abhignamargam12@gmail.com</a>
+    <a href="https://github.com/Abhigna1975" target="_blank">github.com/Abhigna1975</a>
+  </div>
+  <div class="specimen">
+    <div class="spec-block"><div class="label">accent</div><div class="swatch" style="background:var(--accent)"></div></div>
+    <div class="spec-block"><div class="label">accent 2</div><div class="swatch" style="background:var(--accent2)"></div></div>
+    <div class="spec-block"><div class="label">headline type</div><div class="big">Aa</div></div>
+    <div class="spec-block"><div class="label">code type</div><div class="code">const ui = () =&gt; {}</div></div>
+  </div>
+</header>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">React</div><div class="skill">JavaScript (ES6+)</div><div class="skill">HTML5</div>
+    <div class="skill">CSS3 / Flexbox / Grid</div><div class="skill">Responsive Design</div><div class="skill">Git</div>
+    <div class="skill">REST API integration</div><div class="skill">Figma handoff</div>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <input type="radio" name="tabs" id="t1" checked>
+  <input type="radio" name="tabs" id="t2">
+  <input type="radio" name="tabs" id="t3">
+  <input type="radio" name="tabs" id="t4">
+  <div class="tabs">
+    <label for="t1">Popnwrap</label>
+    <label for="t2">Jewelry Site</label>
+    <label for="t3">Portfolio</label>
+    <label for="t4">MyPortfolio</label>
+  </div>
+  <div class="tab-panels">
+    <div class="panel" id="p1">
+      <h3>Popnwrap</h3>
+      <div class="stack">React</div>
+      <p>An interactive React application — built around component structure, props/state handling, and reusable UI pieces.</p>
+      <a href="https://github.com/Abhigna1975/Popnwrap" target="_blank">View on GitHub →</a>
+    </div>
+    <div class="panel" id="p2">
+      <h3>Jewelry Site</h3>
+      <div class="stack">HTML · CSS</div>
+      <p>A full storefront-style page — layout, typography and spacing built entirely by hand in HTML/CSS.</p>
+      <a href="https://github.com/Abhigna1975/jewelry-site" target="_blank">View on GitHub →</a>
+    </div>
+    <div class="panel" id="p3">
+      <h3>Portfolio</h3>
+      <div class="stack">HTML · CSS</div>
+      <p>Personal site built to practice semantic structure and responsive layout fundamentals.</p>
+      <a href="https://github.com/Abhigna1975/portfolio" target="_blank">View on GitHub →</a>
+    </div>
+    <div class="panel" id="p4">
+      <h3>MyPortfolio</h3>
+      <div class="stack">CSS</div>
+      <p>A styling-focused iteration exploring visual layout and CSS-only design choices.</p>
+      <a href="https://github.com/Abhigna1975/MyPortfolio" target="_blank">View on GitHub →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Client projects</h2>
+  <div class="job">
+    <div class="meta"><span>Organic Mandya</span><span>Aug 2026 – Present</span></div>
+    <h3>E-commerce storefront &amp; Shopify theme</h3>
+    <ul>
+      <li>Rebuilt storefront pages in Next.js (App Router) to match the live Shopify store pixel-for-pixel at desktop, tablet and mobile widths.</li>
+      <li>Shipped Shopify theme features through pull requests, CI checks and theme previews (120+ commits).</li>
+      <li>Worked on GA4 and Google Tag Manager tracking for the store.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="meta"><span>Rest Coder Academy</span><span>Sep 2026 – Present</span></div>
+    <h3>Student portal (React · Vite · Cloudflare)</h3>
+    <ul>
+      <li>Designed the enrolment and payment flow for the academy's student portal.</li>
+      <li>Built a design-token system (one typeface, four radii) and adopted it across the React codebase.</li>
+      <li>Rebuilt the recurring social media templates in-repo and wrote the OAuth setup runbook for the owner.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
+  <div class="job">
+    <div class="meta"><span>Starteryou</span><span>Feb 2025 – Feb 2026</span></div>
+    <h3>UI/UX Designer &amp; Developer</h3>
+    <ul>
+      <li>Designed and built user-centered web and mobile experiences in HTML, CSS, JavaScript and React, focused on accessibility and clear navigation.</li>
+      <li>Created and enforced design system guidelines and component libraries to keep the brand consistent across digital products.</li>
+      <li>Worked with developers and marketing to ship within business and technical constraints; led design sprints and stakeholder presentations.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="meta"><span>Sacred Heart University</span><span>May 2024 – Jul 2024</span></div>
+    <h3>Graduate Assistant</h3>
+    <ul>
+      <li>Supported instructors across multiple computer science courses for 50+ students.</li>
+      <li>Led tutoring sessions on data structures, algorithms and web development; feedback contributed to a 15% rise in average class performance.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>Abhigna Margam · Frontend Developer</footer>
+</div>
+</body>
+</html>

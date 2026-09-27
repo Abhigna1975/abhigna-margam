@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhigna Margam — UI/UX Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F4FB;--text:#292432;--heading:#1D1826;--muted:#5E5570;--line:#DCD4EE;--accent:#6B4EDB;--panelL:#EFEAFB;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.6}
+.wrap{max-width:960px;margin:0 auto;padding:0 28px}
+header{padding:90px 0 60px;display:flex;gap:40px;flex-wrap:wrap;align-items:flex-end}
+h1{font-family:'Fraunces',serif;font-size:clamp(32px,5vw,52px);color:var(--heading);max-width:15ch;flex:1;min-width:280px}
+.side{flex:0 0 220px}
+.side p{color:var(--muted);font-size:15px}
+.side .contacts{margin-top:16px;display:flex;flex-direction:column;gap:8px;font-size:14px}
+.side a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)}
+
+/* process spine */
+.spine{position:relative;padding:70px 0;border-top:1px solid var(--line)}
+.spine h2{font-family:'Fraunces',serif;font-size:26px;margin-bottom:44px}
+.stages{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative}
+.stages::before{content:"";position:absolute;top:17px;left:8%;right:8%;height:2px;background:var(--line)}
+.stage{position:relative;padding:0 16px;text-align:left}
+.stage .dot{width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:13px;margin-bottom:18px;position:relative;z-index:1}
+.stage h3{font-family:'Fraunces',serif;font-size:19px;margin-bottom:8px;color:var(--heading)}
+.stage p{color:var(--muted);font-size:14.5px}
+
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2.sec-h{font-family:'Fraunces',serif;font-size:24px;margin-bottom:30px;color:var(--heading)}
+.skills{display:flex;flex-wrap:wrap;gap:9px}
+.skill{font-size:13.5px;padding:8px 14px;background:var(--panelL);border-radius:6px;color:var(--text)}
+
+.split-project{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:22px}
+.split-project .design,.split-project .build{padding:24px}
+.split-project .design{background:var(--panelL)}
+.split-project .build{background:#fff}
+.split-project .lbl{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--accent);margin-bottom:8px}
+.split-project h3{font-family:'Fraunces',serif;font-size:18px;margin-bottom:8px;color:var(--heading)}
+.split-project p{font-size:14px;color:var(--muted)}
+.split-project a{display:inline-block;margin-top:10px;font-size:13px;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)}
+
+.job{margin-bottom:24px}
+.job .meta{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent);display:flex;justify-content:space-between}
+.job h3{font-family:'Fraunces',serif;font-size:18px;margin:6px 0 8px;color:var(--heading)}
+.job ul{padding-left:18px;color:var(--muted);font-size:14.5px}
+.note{font-size:12.5px;color:var(--muted);opacity:.75;margin-top:12px}
+footer{padding:40px 0 70px;color:var(--muted);font-size:13px}
+@media(max-width:640px){.stages{grid-template-columns:1fr;gap:28px}.stages::before{display:none}.split-project{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Where design intent meets working code.</h1>
+  <div class="side">
+    <p>UI/UX Developer — I take Figma files and ship them as real, functioning interfaces.</p>
+    <div class="contacts">
+      <a href="mailto:abhignamargam12@gmail.com">Email</a>
+      <a href="https://github.com/Abhigna1975" target="_blank">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<div class="spine">
+  <h2>How I work</h2>
+  <div class="stages">
+    <div class="stage"><div class="dot">1</div><h3>Design</h3><p>Wireframe and prototype in Figma, define spacing and type scale.</p></div>
+    <div class="stage"><div class="dot">2</div><h3>Build</h3><p>Implement in HTML/CSS/React with real content and states.</p></div>
+    <div class="stage"><div class="dot">3</div><h3>Refine</h3><p>Check against the design, fix edge cases, tighten interactions.</p></div>
+  </div>
+</div>
+
+<section>
+  <h2 class="sec-h">Skills</h2>
+  <div class="skills">
+    <div class="skill">Figma</div><div class="skill">React</div><div class="skill">HTML / CSS</div>
+    <div class="skill">JavaScript</div><div class="skill">Adobe XD</div><div class="skill">Design Systems</div>
+  </div>
+</section>
+
+<section>
+  <h2 class="sec-h">Projects — design → build</h2>
+  <div class="split-project">
+    <div class="design"><div class="lbl">DESIGN</div><h3>Jewelry Site</h3><p>Full storefront layout planned first — hierarchy, spacing, imagery.</p></div>
+    <div class="build"><div class="lbl">BUILD</div><h3>Shipped in HTML/CSS</h3><p>Implemented pixel-close to plan, responsive across breakpoints.</p><a href="https://github.com/Abhigna1975/jewelry-site" target="_blank">View on GitHub →</a></div>
+  </div>
+  <div class="split-project">
+    <div class="design"><div class="lbl">DESIGN</div><h3>Popnwrap</h3><p>Interaction states and component behavior planned before build.</p></div>
+    <div class="build"><div class="lbl">BUILD</div><h3>Shipped in React</h3><p>Built as reusable components with real state handling.</p><a href="https://github.com/Abhigna1975/Popnwrap" target="_blank">View on GitHub →</a></div>
+  </div>
+  <div class="split-project">
+    <div class="design"><div class="lbl">DESIGN</div><h3>Portfolio</h3><p>Self-directed layout exercise, refining type and grid choices.</p></div>
+    <div class="build"><div class="lbl">BUILD</div><h3>Shipped in HTML/CSS</h3><p>Used to practice translating a design plan directly into code.</p><a href="https://github.com/Abhigna1975/portfolio" target="_blank">View on GitHub →</a></div>
+  </div>
+</section>
+
+<section>
+  <h2 class="sec-h">Client projects</h2>
+  <div class="job">
+    <div class="meta"><span>Organic Mandya</span><span>Aug 2026 – Present</span></div>
+    <h3>E-commerce storefront &amp; Shopify theme</h3>
+    <ul>
+      <li>Rebuilt storefront pages in Next.js (App Router) to match the live Shopify store pixel-for-pixel at desktop, tablet and mobile widths.</li>
+      <li>Shipped Shopify theme features through pull requests, CI checks and theme previews (120+ commits).</li>
+      <li>Worked on GA4 and Google Tag Manager tracking for the store.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="meta"><span>Rest Coder Academy</span><span>Sep 2026 – Present</span></div>
+    <h3>Student portal (React · Vite · Cloudflare)</h3>
+    <ul>
+      <li>Designed the enrolment and payment flow for the academy's student portal.</li>
+      <li>Built a design-token system (one typeface, four radii) and adopted it across the React codebase.</li>
+      <li>Rebuilt the recurring social media templates in-repo and wrote the OAuth setup runbook for the owner.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2 class="sec-h">Experience</h2>
+  <div class="job">
+    <div class="meta"><span>Starteryou</span><span>Feb 2025 – Feb 2026</span></div>
+    <h3>UI/UX Designer &amp; Developer</h3>
+    <ul>
+      <li>Designed and built user-centered web and mobile experiences in HTML, CSS, JavaScript and React, focused on accessibility and clear navigation.</li>
+      <li>Created and enforced design system guidelines and component libraries to keep the brand consistent across digital products.</li>
+      <li>Ran usability tests with target users and iterated on designs based on feedback and analytics.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="meta"><span>Sacred Heart University</span><span>May 2024 – Jul 2024</span></div>
+    <h3>Graduate Assistant</h3>
+    <ul>
+      <li>Supported instructors across multiple computer science courses for 50+ students.</li>
+      <li>Led tutoring sessions on data structures, algorithms and web development; feedback contributed to a 15% rise in average class performance.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>Abhigna Margam · UI/UX Developer</footer>
+</div>
+</body>
+</html>

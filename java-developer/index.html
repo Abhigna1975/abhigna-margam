@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhigna Margam — Java Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1E1B16;--panel:#26221B;--line:#3A342A;--text:#E9E3D6;--muted:#A79E8C;--accent:#D68A45;--kw:#7FA6C9;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'IBM Plex Sans',sans-serif;line-height:1.6;display:flex;min-height:100vh}
+.sidebar{width:230px;background:var(--panel);border-right:1px solid var(--line);padding:34px 20px;position:sticky;top:0;height:100vh;flex-shrink:0}
+.sidebar .name{font-family:'IBM Plex Serif',serif;font-size:17px;margin-bottom:4px}
+.sidebar .role{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--accent);margin-bottom:30px}
+.tree{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--muted)}
+.tree div{padding:6px 0;padding-left:14px;border-left:2px solid transparent}
+.tree div.active{color:var(--text);border-left-color:var(--accent)}
+.main{flex:1;padding:60px 48px;max-width:820px}
+.comment{color:#6B6455;font-family:'IBM Plex Mono',monospace;font-size:13px;margin-bottom:6px}
+h1{font-family:'IBM Plex Serif',serif;font-size:clamp(30px,4.5vw,44px);margin-bottom:18px}
+.kw{color:var(--kw)}
+.sub{color:var(--muted);max-width:60ch;margin-bottom:20px;font-size:16px}
+.contacts{display:flex;gap:20px;font-family:'IBM Plex Mono',monospace;font-size:13px;margin-bottom:50px}
+.contacts a{color:var(--accent);text-decoration:none}
+
+section{margin-bottom:56px}
+h2{font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--accent);margin-bottom:22px}
+.skills{display:flex;flex-wrap:wrap;gap:9px}
+.skill{font-family:'IBM Plex Mono',monospace;font-size:13px;padding:7px 13px;background:var(--panel);border:1px solid var(--line);border-radius:4px}
+
+.class-block{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:22px 24px;margin-bottom:18px;font-family:'IBM Plex Mono',monospace;font-size:13.5px}
+.class-block .sig{color:var(--kw);margin-bottom:10px}
+.class-block .desc{font-family:'IBM Plex Sans',sans-serif;color:var(--muted);font-size:14.5px;line-height:1.6;margin-bottom:10px}
+.class-block a{color:var(--accent);text-decoration:none}
+
+.job{margin-bottom:26px;border-left:2px solid var(--line);padding-left:18px}
+.job .meta{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--accent);display:flex;justify-content:space-between}
+.job h3{font-family:'IBM Plex Serif',serif;font-size:18px;margin:6px 0 8px}
+.job ul{padding-left:18px;color:var(--muted);font-size:14.5px}
+.note{font-size:12.5px;color:var(--muted);opacity:.7;margin-top:12px}
+footer{color:var(--muted);font-size:13px;font-family:'IBM Plex Mono',monospace}
+@media(max-width:760px){body{flex-direction:column}.sidebar{width:100%;height:auto;position:relative}.main{padding:40px 24px}}
+</style>
+</head>
+<body>
+<div class="sidebar">
+  <div class="name">Abhigna Margam</div>
+  <div class="role">Java Developer</div>
+  <div class="tree">
+    <div class="active">→ About.java</div>
+    <div>→ Skills.java</div>
+    <div>→ Projects.java</div>
+    <div>→ Experience.java</div>
+  </div>
+</div>
+<div class="main">
+  <div class="comment">// About.java</div>
+  <h1><span class="kw">public class</span> Developer</h1>
+  <p class="sub">Java developer with a foundation in data structures, OOP, and backend fundamentals — comfortable working close to the database.</p>
+  <div class="contacts">
+    <a href="mailto:abhignamargam12@gmail.com">abhignamargam12@gmail.com</a>
+    <a href="https://github.com/Abhigna1975" target="_blank">github.com/Abhigna1975</a>
+  </div>
+
+  <section>
+    <h2>// SKILLS</h2>
+    <div class="skills">
+      <div class="skill">Java</div><div class="skill">OOP</div>
+      <div class="skill">Data Structures</div><div class="skill">SQL</div><div class="skill">Git</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>// PROJECTS</h2>
+    <div class="class-block">
+      <div class="sig"><span class="kw">class</span> ArtGalleryManagementSystem</div>
+      <div class="desc">A management system with a MySQL-backed data layer — built to practice database-driven application design (C++/MySQL, directly transferable to Java/JDBC patterns).</div>
+      <a href="https://github.com/Abhigna1975/ART-GALLERY-MANAGEMENT-SYSTEM-PROJECT" target="_blank">→ view source</a>
+    </div>
+    <div class="class-block">
+      <div class="sig"><span class="kw">class</span> DataStructuresAssignments</div>
+      <div class="desc">Core data structure implementations in C++ — the same fundamentals behind Java Collections and algorithm design.</div>
+      <a href="https://github.com/Abhigna1975/DataStructures-Assignments." target="_blank">→ view source</a>
+    </div>
+    <div class="class-block">
+      <div class="sig"><span class="kw">class</span> DevOpsIntro</div>
+      <div class="desc">Introductory build/deploy project — packaging and shipping a service to an environment.</div>
+      <a href="https://github.com/Abhigna1975/1st-DevOpsPrj" target="_blank">→ view source</a>
+    </div>
+  </section>
+
+  <section>
+  <h2>// CLIENT PROJECTS</h2>
+  <div class="job">
+    <div class="meta"><span>Organic Mandya</span><span>Aug 2026 – Present</span></div>
+    <h3>E-commerce storefront &amp; Shopify theme</h3>
+    <ul>
+      <li>Rebuilt storefront pages in Next.js (App Router) to match the live Shopify store pixel-for-pixel at desktop, tablet and mobile widths.</li>
+      <li>Shipped Shopify theme features through pull requests, CI checks and theme previews (120+ commits).</li>
+      <li>Worked on GA4 and Google Tag Manager tracking for the store.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="meta"><span>Rest Coder Academy</span><span>Sep 2026 – Present</span></div>
+    <h3>Student portal (React · Vite · Cloudflare)</h3>
+    <ul>
+      <li>Designed the enrolment and payment flow for the academy's student portal.</li>
+      <li>Built a design-token system (one typeface, four radii) and adopted it across the React codebase.</li>
+      <li>Rebuilt the recurring social media templates in-repo and wrote the OAuth setup runbook for the owner.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>// EXPERIENCE</h2>
+  <div class="job">
+    <div class="meta"><span>Starteryou</span><span>Feb 2025 – Feb 2026</span></div>
+    <h3>UI/UX Designer &amp; Developer</h3>
+    <ul>
+      <li>Designed and built user-centered web and mobile experiences in HTML, CSS, JavaScript and React, focused on accessibility and clear navigation.</li>
+      <li>Worked with developers and marketing to ship within business and technical constraints; led design sprints and stakeholder presentations.</li>
+      <li>Owned all design and front-end development for the startup: mobile app interfaces, web pages, social graphics and brand assets.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="meta"><span>Sacred Heart University</span><span>May 2024 – Jul 2024</span></div>
+    <h3>Graduate Assistant</h3>
+    <ul>
+      <li>Supported instructors across multiple computer science courses for 50+ students.</li>
+      <li>Led tutoring sessions on data structures, algorithms and web development; feedback contributed to a 15% rise in average class performance.</li>
+    </ul>
+  </div>
+</section>
+
+  <footer>// Abhigna Margam — Java Developer</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhigna Margam — UI/UX Designer</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFF7F3;--text:#332420;--heading:#251814;--muted:#836F66;--line:#F0DED4;--accent:#D9633B;--card:#FFFFFF;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.65}
+.wrap{max-width:900px;margin:0 auto;padding:0 28px}
+header{padding:100px 0 70px;text-align:left}
+h1{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:clamp(36px,6vw,64px);color:var(--heading);max-width:15ch}
+.sub{margin-top:24px;font-size:18px;color:var(--muted);max-width:52ch}
+.contacts{margin-top:28px;display:flex;gap:22px;font-size:14px}
+.contacts a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)}
+
+.process{padding:60px 0;border-top:1px solid var(--line)}
+.process h2{font-family:'Fraunces',serif;font-size:26px;margin-bottom:34px}
+.p-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.p-card{background:var(--card);border-radius:12px;padding:22px 18px;border:1px solid var(--line)}
+.p-card .n{font-family:'Fraunces',serif;font-style:italic;font-size:24px;color:var(--accent);margin-bottom:10px}
+.p-card h3{font-size:15.5px;margin-bottom:6px;color:var(--heading)}
+.p-card p{font-size:13px;color:var(--muted)}
+
+section{padding:60px 0;border-top:1px solid var(--line)}
+h2.sec-h{font-family:'Fraunces',serif;font-size:24px;margin-bottom:30px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skill{font-size:14px;padding:9px 16px;background:var(--card);border:1px solid var(--line);border-radius:999px}
+
+.case{display:grid;grid-template-columns:180px 1fr;gap:26px;padding:26px 0;border-top:1px solid var(--line)}
+.case:first-of-type{border-top:none}
+.case .thumb{height:120px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#F2B279)}
+.case h3{font-family:'Fraunces',serif;font-size:20px;margin-bottom:6px;color:var(--heading)}
+.case .stack{font-size:12px;color:var(--accent);margin-bottom:8px;text-transform:uppercase;letter-spacing:.04em}
+.case p{color:var(--muted);font-size:14.5px;max-width:56ch}
+.case a{display:inline-block;margin-top:10px;font-size:13px;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)}
+
+.job{margin-bottom:26px}
+.job .meta{font-size:12px;color:var(--accent);display:flex;justify-content:space-between;text-transform:uppercase;letter-spacing:.03em}
+.job h3{font-family:'Fraunces',serif;font-size:19px;margin:6px 0 8px;color:var(--heading)}
+.job ul{padding-left:18px;color:var(--muted);font-size:14.5px}
+.note{font-size:12.5px;color:var(--muted);opacity:.75;margin-top:12px}
+footer{padding:40px 0 70px;color:var(--muted);font-size:13px}
+@media(max-width:640px){.p-grid{grid-template-columns:1fr 1fr}.case{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Designing interfaces that feel obvious to use.</h1>
+  <p class="sub">UI/UX Designer working across Figma, Adobe and Canva — from early wireframe through to a finished visual system.</p>
+  <div class="contacts">
+    <a href="mailto:abhignamargam12@gmail.com">Email</a>
+    <a href="https://github.com/Abhigna1975" target="_blank">GitHub</a>
+  </div>
+</header>
+
+<div class="process">
+  <h2>Process</h2>
+  <div class="p-grid">
+    <div class="p-card"><div class="n">1</div><h3>Research</h3><p>Understand the user and the goal of the screen.</p></div>
+    <div class="p-card"><div class="n">2</div><h3>Wireframe</h3><p>Rough layout and structure before visual style.</p></div>
+    <div class="p-card"><div class="n">3</div><h3>Prototype</h3><p>High-fidelity Figma mockups with real content.</p></div>
+    <div class="p-card"><div class="n">4</div><h3>Test</h3><p>Walk through the flow, catch friction, refine.</p></div>
+  </div>
+</div>
+
+<section>
+  <h2 class="sec-h">Skills</h2>
+  <div class="skills">
+    <div class="skill">Figma</div><div class="skill">Adobe XD</div><div class="skill">Canva</div>
+    <div class="skill">Wireframing</div><div class="skill">Prototyping</div><div class="skill">Design Systems</div>
+  </div>
+</section>
+
+<section>
+  <h2 class="sec-h">Case studies</h2>
+  <div class="case">
+    <div class="thumb"></div>
+    <div>
+      <h3>Jewelry Site</h3>
+      <div class="stack">Figma · Adobe</div>
+      <p>Full visual design for a product storefront — mood, layout and type system, then handed off and built in HTML/CSS.</p>
+      <a href="https://github.com/Abhigna1975/jewelry-site" target="_blank">View project →</a>
+    </div>
+  </div>
+  <div class="case">
+    <div class="thumb"></div>
+    <div>
+      <h3>Portfolio</h3>
+      <div class="stack">Figma</div>
+      <p>Personal brand and portfolio design — concept, layout and final visual direction.</p>
+      <a href="https://github.com/Abhigna1975/portfolio" target="_blank">View project →</a>
+    </div>
+  </div>
+  <div class="case">
+    <div class="thumb"></div>
+    <div>
+      <h3>MyPortfolio</h3>
+      <div class="stack">Canva · CSS</div>
+      <p>A visual exploration of personal portfolio styling — used to test a different layout language.</p>
+      <a href="https://github.com/Abhigna1975/MyPortfolio" target="_blank">View project →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="sec-h">Client projects</h2>
+  <div class="job">
+    <div class="meta"><span>Organic Mandya</span><span>Aug 2026 – Present</span></div>
+    <h3>E-commerce storefront &amp; Shopify theme</h3>
+    <ul>
+      <li>Rebuilt storefront pages in Next.js (App Router) to match the live Shopify store pixel-for-pixel at desktop, tablet and mobile widths.</li>
+      <li>Shipped Shopify theme features through pull requests, CI checks and theme previews (120+ commits).</li>
+      <li>Worked on GA4 and Google Tag Manager tracking for the store.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="meta"><span>Rest Coder Academy</span><span>Sep 2026 – Present</span></div>
+    <h3>Student portal (React · Vite · Cloudflare)</h3>
+    <ul>
+      <li>Designed the enrolment and payment flow for the academy's student portal.</li>
+      <li>Built a design-token system (one typeface, four radii) and adopted it across the React codebase.</li>
+      <li>Rebuilt the recurring social media templates in-repo and wrote the OAuth setup runbook for the owner.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2 class="sec-h">Experience</h2>
+  <div class="job">
+    <div class="meta"><span>Starteryou</span><span>Feb 2025 – Feb 2026</span></div>
+    <h3>UI/UX Designer &amp; Developer</h3>
+    <ul>
+      <li>Owned all design and front-end development for the startup: mobile app interfaces, web pages, social graphics and brand assets.</li>
+      <li>Created and enforced design system guidelines and component libraries to keep the brand consistent across digital products.</li>
+      <li>Ran usability tests with target users and iterated on designs based on feedback and analytics.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="meta"><span>Sacred Heart University</span><span>May 2024 – Jul 2024</span></div>
+    <h3>Graduate Assistant</h3>
+    <ul>
+      <li>Supported instructors across multiple computer science courses for 50+ students.</li>
+      <li>Led tutoring sessions on data structures, algorithms and web development; feedback contributed to a 15% rise in average class performance.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>Abhigna Margam · UI/UX Designer</footer>
+</div>
+</body>
+</html>

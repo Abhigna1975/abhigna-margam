@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhigna Margam — Full Stack Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4FAF4;--text:#1E2A1E;--heading:#132013;--muted:#4E5D4E;--line:#DCEBDC;--accent:#2F7D32;--panel:#fff;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.6}
+.wrap{max-width:900px;margin:0 auto;padding:0 28px}
+header{padding:90px 0 50px}
+h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(32px,5.5vw,54px);color:var(--heading);max-width:15ch}
+.sub{margin-top:20px;color:var(--muted);font-size:17px;max-width:56ch}
+.contacts{margin-top:26px;display:flex;gap:20px;font-family:'JetBrains Mono',monospace;font-size:13px}
+.contacts a{color:var(--accent);text-decoration:none}
+
+.stack-diagram{margin:50px 0 70px}
+.layer{border:1px solid var(--line);background:var(--panel);border-radius:8px;margin-bottom:-1px;overflow:hidden}
+.layer summary{list-style:none;cursor:pointer;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--accent)}
+.layer summary::-webkit-details-marker{display:none}
+.layer summary .name{color:var(--heading);font-family:'Space Grotesk',sans-serif;font-size:16px}
+.layer[open] summary{border-bottom:1px solid var(--line)}
+.layer .content{padding:20px 22px 24px}
+.layer .content p{color:var(--muted);font-size:14.5px;margin-bottom:10px}
+.layer .content a{font-size:13px;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)}
+.layer.ui{z-index:3;position:relative}
+.layer.api{z-index:2;position:relative}
+.layer.db{z-index:1;position:relative}
+
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-family:'Space Grotesk',sans-serif;font-size:22px;margin-bottom:26px;color:var(--heading)}
+.skills{display:flex;flex-wrap:wrap;gap:9px}
+.skill{font-family:'JetBrains Mono',monospace;font-size:13px;padding:7px 13px;background:#fff;border:1px solid var(--line);border-radius:4px}
+
+.job{margin-bottom:24px}
+.job .meta{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent);display:flex;justify-content:space-between}
+.job h3{font-family:'Space Grotesk',sans-serif;font-size:18px;margin:6px 0 8px}
+.job ul{padding-left:18px;color:var(--muted);font-size:14.5px}
+.note{font-size:12.5px;color:var(--muted);opacity:.75;margin-top:12px}
+footer{padding:40px 0 70px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Comfortable on either side of the API.</h1>
+  <p class="sub">Full stack developer working across React front ends, backend logic, and databases. Click a layer below to open it.</p>
+  <div class="contacts">
+    <a href="mailto:abhignamargam12@gmail.com">Email</a>
+    <a href="https://github.com/Abhigna1975" target="_blank">GitHub</a>
+  </div>
+</header>
+
+<div class="stack-diagram">
+  <details class="layer ui" open>
+    <summary><span class="name">UI Layer</span><span>React · JS · HTML/CSS</span></summary>
+    <div class="content">
+      <p><strong>Popnwrap</strong> — interactive React application covering client-side state and UI.</p>
+      <a href="https://github.com/Abhigna1975/Popnwrap" target="_blank">View source →</a>
+      <p style="margin-top:14px"><strong>Jewelry Site</strong> — full front-end build of a product site.</p>
+      <a href="https://github.com/Abhigna1975/jewelry-site" target="_blank">View source →</a>
+    </div>
+  </details>
+  <details class="layer api">
+    <summary><span class="name">Logic Layer</span><span>Application code</span></summary>
+    <div class="content">
+      <p><strong>Credit Card Fraud Detection</strong> — a data-driven project analyzing transaction patterns end to end.</p>
+      <a href="https://github.com/Abhigna1975/Credit-card-Freud-detection." target="_blank">View source →</a>
+    </div>
+  </details>
+  <details class="layer db">
+    <summary><span class="name">Data Layer</span><span>SQL · MySQL</span></summary>
+    <div class="content">
+      <p><strong>Art Gallery Management System</strong> — database-backed application handling data storage and retrieval.</p>
+      <a href="https://github.com/Abhigna1975/ART-GALLERY-MANAGEMENT-SYSTEM-PROJECT" target="_blank">View source →</a>
+    </div>
+  </details>
+</div>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">React</div><div class="skill">Java</div><div class="skill">JavaScript</div>
+    <div class="skill">SQL</div><div class="skill">HTML/CSS</div><div class="skill">Git</div>
+  </div>
+</section>
+
+<section>
+  <h2>Client projects</h2>
+  <div class="job">
+    <div class="meta"><span>Organic Mandya</span><span>Aug 2026 – Present</span></div>
+    <h3>E-commerce storefront &amp; Shopify theme</h3>
+    <ul>
+      <li>Rebuilt storefront pages in Next.js (App Router) to match the live Shopify store pixel-for-pixel at desktop, tablet and mobile widths.</li>
+      <li>Shipped Shopify theme features through pull requests, CI checks and theme previews (120+ commits).</li>
+      <li>Worked on GA4 and Google Tag Manager tracking for the store.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="meta"><span>Rest Coder Academy</span><span>Sep 2026 – Present</span></div>
+    <h3>Student portal (React · Vite · Cloudflare)</h3>
+    <ul>
+      <li>Designed the enrolment and payment flow for the academy's student portal.</li>
+      <li>Built a design-token system (one typeface, four radii) and adopted it across the React codebase.</li>
+      <li>Rebuilt the recurring social media templates in-repo and wrote the OAuth setup runbook for the owner.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
+  <div class="job">
+    <div class="meta"><span>Starteryou</span><span>Feb 2025 – Feb 2026</span></div>
+    <h3>UI/UX Designer &amp; Developer</h3>
+    <ul>
+      <li>Designed and built user-centered web and mobile experiences in HTML, CSS, JavaScript and React, focused on accessibility and clear navigation.</li>
+      <li>Worked with developers and marketing to ship within business and technical constraints; led design sprints and stakeholder presentations.</li>
+      <li>Owned all design and front-end development for the startup: mobile app interfaces, web pages, social graphics and brand assets.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="meta"><span>Sacred Heart University</span><span>May 2024 – Jul 2024</span></div>
+    <h3>Graduate Assistant</h3>
+    <ul>
+      <li>Supported instructors across multiple computer science courses for 50+ students.</li>
+      <li>Led tutoring sessions on data structures, algorithms and web development; feedback contributed to a 15% rise in average class performance.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>Abhigna Margam · Full Stack Developer</footer>
+</div>
+</body>
+</html>

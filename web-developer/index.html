@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhigna Margam — Web Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F2F9F7;--text:#1E2C29;--heading:#132420;--muted:#547167;--line:#D7EBE4;--accent:#0E8F73;--chrome:#E4F1EC;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.6}
+.wrap{max-width:960px;margin:0 auto;padding:0 28px}
+header{padding:90px 0 56px}
+h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(34px,5.5vw,58px);color:var(--heading);max-width:15ch}
+.sub{margin-top:20px;color:var(--muted);font-size:17px;max-width:56ch}
+.contacts{margin-top:26px;display:flex;gap:20px;font-family:'JetBrains Mono',monospace;font-size:13px}
+.contacts a{color:var(--accent);text-decoration:none}
+
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-family:'Space Grotesk',sans-serif;font-size:22px;margin-bottom:28px;color:var(--heading)}
+.skills{display:flex;flex-wrap:wrap;gap:9px}
+.skill{font-family:'JetBrains Mono',monospace;font-size:13px;padding:7px 13px;background:#fff;border:1px solid var(--line);border-radius:4px}
+
+.browser{border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:24px;background:#fff}
+.chrome{background:var(--chrome);padding:10px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--line)}
+.dots{display:flex;gap:6px}
+.dots span{width:9px;height:9px;border-radius:50%;background:#c9d9d3}
+.urlbar{flex:1;background:#fff;border-radius:5px;padding:5px 10px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted)}
+.page{padding:26px}
+.page h3{font-family:'Space Grotesk',sans-serif;font-size:19px;margin-bottom:6px;color:var(--heading)}
+.page .stack{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent);margin-bottom:10px}
+.page p{color:var(--muted);font-size:14.5px;max-width:60ch}
+.page a{display:inline-block;margin-top:12px;font-size:13px;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)}
+
+.job{margin-bottom:24px}
+.job .meta{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent);display:flex;justify-content:space-between}
+.job h3{font-family:'Space Grotesk',sans-serif;font-size:18px;margin:6px 0 8px;color:var(--heading)}
+.job ul{padding-left:18px;color:var(--muted);font-size:14.5px}
+.note{font-size:12.5px;color:var(--muted);opacity:.75;margin-top:12px}
+footer{padding:40px 0 70px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>I build websites, start to finish.</h1>
+  <p class="sub">Web developer building full pages and small sites with HTML, CSS, JavaScript and React.</p>
+  <div class="contacts">
+    <a href="mailto:abhignamargam12@gmail.com">abhignamargam12@gmail.com</a>
+    <a href="https://github.com/Abhigna1975" target="_blank">github.com/Abhigna1975</a>
+  </div>
+</header>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">HTML5</div><div class="skill">CSS3</div><div class="skill">JavaScript</div>
+    <div class="skill">React</div><div class="skill">Git</div><div class="skill">Responsive Design</div>
+  </div>
+</section>
+
+<section>
+  <h2>Sites I've built</h2>
+
+  <div class="browser">
+    <div class="chrome"><div class="dots"><span></span><span></span><span></span></div><div class="urlbar">github.com/Abhigna1975/jewelry-site</div></div>
+    <div class="page">
+      <h3>Jewelry Site</h3>
+      <div class="stack">HTML · CSS</div>
+      <p>Full storefront-style website built from a static layout — from page structure to final styling.</p>
+      <a href="https://github.com/Abhigna1975/jewelry-site" target="_blank">View on GitHub →</a>
+    </div>
+  </div>
+
+  <div class="browser">
+    <div class="chrome"><div class="dots"><span></span><span></span><span></span></div><div class="urlbar">github.com/Abhigna1975/portfolio</div></div>
+    <div class="page">
+      <h3>Portfolio</h3>
+      <div class="stack">HTML · CSS</div>
+      <p>Personal site built and deployed from scratch.</p>
+      <a href="https://github.com/Abhigna1975/portfolio" target="_blank">View on GitHub →</a>
+    </div>
+  </div>
+
+  <div class="browser">
+    <div class="chrome"><div class="dots"><span></span><span></span><span></span></div><div class="urlbar">github.com/Abhigna1975/Popnwrap</div></div>
+    <div class="page">
+      <h3>Popnwrap</h3>
+      <div class="stack">React</div>
+      <p>Small React-based web app built for interactive UI practice.</p>
+      <a href="https://github.com/Abhigna1975/Popnwrap" target="_blank">View on GitHub →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Client projects</h2>
+  <div class="job">
+    <div class="meta"><span>Organic Mandya</span><span>Aug 2026 – Present</span></div>
+    <h3>E-commerce storefront &amp; Shopify theme</h3>
+    <ul>
+      <li>Rebuilt storefront pages in Next.js (App Router) to match the live Shopify store pixel-for-pixel at desktop, tablet and mobile widths.</li>
+      <li>Shipped Shopify theme features through pull requests, CI checks and theme previews (120+ commits).</li>
+      <li>Worked on GA4 and Google Tag Manager tracking for the store.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="meta"><span>Rest Coder Academy</span><span>Sep 2026 – Present</span></div>
+    <h3>Student portal (React · Vite · Cloudflare)</h3>
+    <ul>
+      <li>Designed the enrolment and payment flow for the academy's student portal.</li>
+      <li>Built a design-token system (one typeface, four radii) and adopted it across the React codebase.</li>
+      <li>Rebuilt the recurring social media templates in-repo and wrote the OAuth setup runbook for the owner.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
+  <div class="job">
+    <div class="meta"><span>Starteryou</span><span>Feb 2025 – Feb 2026</span></div>
+    <h3>UI/UX Designer &amp; Developer</h3>
+    <ul>
+      <li>Owned all design and front-end development for the startup: mobile app interfaces, web pages, social graphics and brand assets.</li>
+      <li>Designed and built user-centered web and mobile experiences in HTML, CSS, JavaScript and React, focused on accessibility and clear navigation.</li>
+      <li>Worked with developers and marketing to ship within business and technical constraints; led design sprints and stakeholder presentations.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="meta"><span>Sacred Heart University</span><span>May 2024 – Jul 2024</span></div>
+    <h3>Graduate Assistant</h3>
+    <ul>
+      <li>Supported instructors across multiple computer science courses for 50+ students.</li>
+      <li>Led tutoring sessions on data structures, algorithms and web development; feedback contributed to a 15% rise in average class performance.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>Abhigna Margam · Web Developer</footer>
+</div>
+</body>
+</html>

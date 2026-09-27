@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhigna Margam — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F7F5;--text:#1F2328;--muted:#5C636E;--line:#E2E4E8;--accent:#0E8F73;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#111315;--text:#E8EAED;--muted:#9AA1AB;--line:#2A2E33;--accent:#5CC9A7;--card:#181B1E}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.6}
+.wrap{max-width:900px;margin:0 auto;padding:80px 20px}
+h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,6vw,52px)}
+.sub{color:var(--muted);margin-top:14px;max-width:56ch;font-size:17px}
+.contacts{margin-top:20px;display:flex;flex-wrap:wrap;gap:18px;font-size:14px}
+.contacts a{color:var(--accent);text-decoration:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin-top:48px}
+.grid a{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;text-decoration:none;color:var(--text);font-family:'Space Grotesk',sans-serif;font-size:18px}
+.grid a span{display:block;font-family:'Inter',sans-serif;font-size:13px;color:var(--muted);margin-top:4px}
+.grid a:hover{border-color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Abhigna Margam</h1>
+  <p class="sub">UI/UX designer and front-end developer in Dallas, TX. I design and build user-centered products from concept to code.</p>
+  <div class="contacts">
+    <a href="mailto:abhignamargam12@gmail.com">abhignamargam12@gmail.com</a>
+    <a href="https://github.com/Abhigna1975" target="_blank">github.com/Abhigna1975</a>
+  </div>
+  <div class="grid">
+    <a href="frontend-developer/">Frontend Developer<span>React · JavaScript · CSS</span></a>
+    <a href="ui-ux-developer/">UI/UX Developer<span>Figma to working code</span></a>
+    <a href="ui-ux-designer/">UI/UX Designer<span>Research · Wireframes · Prototypes</span></a>
+    <a href="web-developer/">Web Developer<span>HTML · CSS · JavaScript</span></a>
+    <a href="full-stack-developer/">Full Stack Developer<span>UI · Logic · Data</span></a>
+    <a href="full-stack-java-developer/">Full Stack Java Developer<span>Java · SQL · React</span></a>
+    <a href="java-developer/">Java Developer<span>OOP · Data Structures · SQL</span></a>
+    <a href="forward-deployed-engineer/">Forward Deployed Engineer<span>Client delivery · AI-assisted builds</span></a>
+  </div>
+</div>
+</body>
+</html>
